@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+# YMMP台本抽出ツール
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ゆっくりムービーメーカー（YMMP）のプロジェクトファイルからキャラクターのセリフを抽出するWebアプリケーションです。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- YMMPファイルのアップロード（ドラッグ＆ドロップ対応）
+- 登場キャラクターの自動検出
+- キャラクター名の置換設定
+- カスタマイズ可能な出力フォーマット
+- スクリプトのテキストファイルへのダウンロード
+- クリップボードへのコピー
 
-## Expanding the ESLint configuration
+## 使い方
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. YMMPファイルをアップロードします
+2. 検出されたキャラクター名を必要に応じて置換設定します
+3. 出力フォーマットとタイムスタンプオプションを選択します
+4. 「スクリプトを抽出」ボタンをクリックします
+5. 抽出結果からテキストファイルをダウンロードするか、クリップボードにコピーします
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 開発環境
+
+- Vite
+- React
+- TypeScript
+
+## プロジェクトのセットアップ
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/yourusername/ymmp-script-extractor.git
+cd ymmp-script-extractor
+
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# ビルド
+npm run build
+
+# GitHub Pagesにデプロイ
+npm run deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ライセンス
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+MIT
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 貢献
+
+Issue や Pull Request は大歓迎です！
