@@ -1,0 +1,133 @@
+/* FileUploader */
+.upload-area {
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--border-radius-sm);
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--color-bg-light);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .upload-area:hover {
+    background-color: var(--color-bg-active);
+  }
+  
+  .upload-area.active {
+    border-color: var(--color-success);
+    background-color: var(--color-success-bg);
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  /* CharacterMapping */
+  .character-mapping-list {
+    margin-top: 15px;
+  }
+  
+  .character-count {
+    color: var(--color-text-light);
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
+  
+  .character-mapping-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 8px;
+  }
+  
+  .character-mapping-item label {
+    min-width: 100px;
+    font-weight: bold;
+  }
+  
+  .character-mapping-item input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+  }
+  
+  .save-mappings-button {
+    margin-top: 15px;
+  }
+  
+  /* OutputOptions */
+  .format-options {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--color-bg-light);
+    border-radius: var(--border-radius-sm);
+  }
+  
+  .radio-group {
+    margin-bottom: 10px;
+  }
+  
+  .radio-group label {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .select-group {
+    margin-top: 10px;
+  }
+  
+  .select-group select {
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    margin-left: 10px;
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .controls-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* ScriptOutput */
+  .script-output {
+    margin-top: 30px;
+    white-space: pre-wrap;
+    border-left: 3px solid var(--color-primary);
+    padding-left: 15px;
+    font-family: var(--font-mono);
+  }
+  
+  .script-line {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-bg-light);
+  }
+  
+  .character-name {
+    font-weight: bold;
+    color: var(--color-heading);
+    margin-right: 5px;
+  }
+  
+  .dialogue {
+    color: var(--color-text);
+  }
+  
+  .timestamp, .frame {
+    color: var(--color-text-light);
+    font-size: 0.8em;
+    margin-left: 10px;
+  }
