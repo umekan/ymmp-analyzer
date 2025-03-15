@@ -48,7 +48,3 @@ npm run deploy
 ## ライセンス
 
 MIT
-
-## 貢献
-
-Issue や Pull Request は大歓迎です！
